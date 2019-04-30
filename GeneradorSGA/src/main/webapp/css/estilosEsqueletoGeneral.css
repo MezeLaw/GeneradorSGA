@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+  visibility: hidden;
+} 
+
+
+.alturaFooter{
+	height:75px;
+	background-color:#2E2E2E;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.letraBlanca{
+	color:white;
+}
+
+.logo{
+	padding: 0px 0px !important;
+}
