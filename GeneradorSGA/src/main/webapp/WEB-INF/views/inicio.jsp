@@ -26,11 +26,12 @@
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
 	<!--  Fin inclusion navBar -->
-	<hr>
-
+	<br>
+	<br>
 	<!--  Inicio elementos de la pagina -->
 	<div class="container" style="margin-top: 50px">
 		<h1>Bienvenido!</h1>
+		<hr>
 		<div class="row">
 			<div class="col-md-4">
 				<p>Es un agrado poder darle la bienvenida al primer GeneradorSGA

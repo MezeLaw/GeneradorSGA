@@ -33,6 +33,7 @@
 	<!--  Inicio elementos de la pagina -->
 	<div class="container" style="margin-top: 50px">
 		<h1>Generar Rotulo</h1>
+		<hr>
 		<div class="row">
 		</div>
 	</div>
