@@ -35,6 +35,44 @@
 		<h1>Generar Rotulo</h1>
 		<hr>
 		<div class="row">
+
+
+			<div class="dropdown col-md-12">
+				<button
+					class="btn btn-secondary dropdown-toggle col-md-7 glyphicon glyphicon-search center-block"
+					type="button" id="dropdown_coins" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false"></button>
+				<div id="menu" class="dropdown-menu col-md-7"
+					aria-labelledby="dropdown_coins">
+					<form class="col-md-12 col-xs-12">
+						<input type="search" class="form-control" id="buscarCompuesto"
+							placeholder="Busque aquí su compuesto" autofocus="autofocus">
+					</form>
+					<div id="menuItems">
+						<ol>
+							<li>Butano</li>
+							<li>Metano</li>
+							<li>Coca-Cola</li>
+							<li>Pepsi</li>
+							<li>7up</li>
+							<li>Gas</li>
+							<li>ATR</li>
+
+						</ol>
+
+					</div>
+<!-- 					<div id="empty" class="dropdown-header col-md-7 col-xs-7">El -->
+<!-- 						compuesto que desea buscar no se encuentra. Puede escribirnos para -->
+<!-- 						agregarlo.</div> -->
+				</div>
+			</div>
+			<hr>
+			<br>
+			<div class="row">
+				<button type="button" class="btn btn-outline-primary">Generar
+					Rotulo</button>
+			</div>
+
 		</div>
 	</div>
 
