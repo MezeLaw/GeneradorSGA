@@ -18,9 +18,16 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="js/votacion.js"> -->
+<!--  Para el search filter -->
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
 
-<!-- </script> -->
+<!--  Para el Search Filter -->
+<link rel="stylesheet"
+	href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+
+<!--  Fin Search Filter -->
+
 </head>
 <body style="">
 
@@ -34,48 +41,39 @@
 	<div class="container" style="margin-top: 50px">
 		<h1>Generar Rotulo</h1>
 		<hr>
-		<div class="row">
-
-
-			<div class="dropdown col-md-12">
-				<button
-					class="btn btn-secondary dropdown-toggle col-md-7 glyphicon glyphicon-search center-block"
-					type="button" id="dropdown_coins" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"></button>
-				<div id="menu" class="dropdown-menu col-md-7"
-					aria-labelledby="dropdown_coins">
-					<form class="col-md-12 col-xs-12">
-						<input type="search" class="form-control" id="buscarCompuesto"
-							placeholder="Busque aquí su compuesto" autofocus="autofocus">
-					</form>
-					<div id="menuItems">
-						<ol>
-							<li>Butano</li>
-							<li>Metano</li>
-							<li>Coca-Cola</li>
-							<li>Pepsi</li>
-							<li>7up</li>
-							<li>Gas</li>
-							<li>ATR</li>
-
-						</ol>
-
-					</div>
-<!-- 					<div id="empty" class="dropdown-header col-md-7 col-xs-7">El -->
-<!-- 						compuesto que desea buscar no se encuentra. Puede escribirnos para -->
-<!-- 						agregarlo.</div> -->
-				</div>
+		<div class="row col-md-12">
+			<div class="row-fluid">
+				<select class="selectpicker" 
+					data-live-search="true" multiple title="Ingrese su busqueda" data-width="100%" data-max-options="1">
+					<option data-subtext="Rep California">Tom Foolery</option>
+					<option data-subtext="Sen California">Bill Gordon</option>
+					<option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+					<option data-subtext="Rep Alabama">Mario Flores</option>
+					<option data-subtext="Rep Alaska">Don Young</option>
+					<option data-subtext="Rep California">Tom Foolery</option>
+					<option data-subtext="Sen California">Bill Gordon</option>
+					<option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+					<option data-subtext="Rep Alabama">Mario Flores</option>
+					<option data-subtext="Rep Alaska">Don Young</option>
+					<option data-subtext="Rep California">Tom Foolery</option>
+					<option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+					<option data-subtext="Rep Alabama">Mario Flores</option>
+					<option data-subtext="Rep Alaska">Don Young</option>
+					<option data-subtext="Rep California">Tom Foolery</option>
+					<option data-subtext="Sen California">Bill Gordon</option>
+					<option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+					<option data-subtext="Rep Alabama">Mario Flores</option>
+					<option data-subtext="Rep Alaska">Don Young</option>
+					
+				</select>
 			</div>
-			<hr>
-			<br>
-			<div class="row">
-				<button type="button" class="btn btn-outline-primary">Generar
-					Rotulo</button>
-			</div>
-
 		</div>
-	</div>
 
+
+
+
+
+	</div>
 
 
 	<!--  Fin inclusion de elementos del site -->
