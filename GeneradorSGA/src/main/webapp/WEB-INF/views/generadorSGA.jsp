@@ -38,8 +38,9 @@
 		<hr>
 
 		<div class="container">
-			<select style="" class="sel col-xs-5">
-
+			<select data-placeholder="Seleccione el elemento.."
+				 class="sel col-xs-5">
+				 <option></option>
 				<option>A</option>
 				<option>B</option>
 				<option>C</option>
@@ -55,7 +56,6 @@
 	<div class="row col-md-9 col-xs-9">
 		<button class="btn btn-primary pull-right" onclick="generarPDF();">
 			Generar Rotulo</button>
-
 	</div>
 
 
