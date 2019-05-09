@@ -1,10 +1,11 @@
 $(document).ready(function() {
-	$('.sel').chosen();
+	$('.sel').chosen({
+	    no_results_text: "No existen resultados para su b&uacute;squeda",
+	    width: "95%"
+	});
+
 });
 
-$(".chosen-select").chosen({
-	no_results_text : "No existen resultados para su búsqueda"
-});
 
 function generarPDF() {
 	alert("Le pegaste bien papa!")
