@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HelloController {
+public class InicioController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	@RequestMapping(value = "/inicio")
 	public ModelAndView handleRequest() {
 		String now = (new Date()).toString();
-		logger.info("Returning hello view with " + now);
+		logger.info("Returning Inicio view with " + now);
 		return new ModelAndView("inicio", "now", now);
 	}
 

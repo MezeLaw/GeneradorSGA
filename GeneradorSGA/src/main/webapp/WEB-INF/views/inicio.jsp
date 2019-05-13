@@ -29,7 +29,7 @@
 	<br>
 	<br>
 	<!--  Inicio elementos de la pagina -->
-	<div class="container" style="margin-top: 50px">
+	<div class="container" style="margin-top: 50px" style="height:100%;">
 		<h1>Bienvenido!</h1>
 		<hr>
 		<div class="row">

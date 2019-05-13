@@ -21,6 +21,10 @@
 
 <script type="text/javascript"
 	src="<c:url value="/js/chosen.jquery.js" />"></script>
+	
+<script type="text/javascript"
+	src="<c:url value="/js/chosen.jquery.min.js" />"></script>	
+	
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
 
 </head>
@@ -38,9 +42,9 @@
 		<hr>
 
 		<div class="container">
-			<select data-placeholder="Seleccione el elemento.."
+			<select id="selectElemento" data-placeholder="Seleccione el elemento.."
 				 class="sel col-xs-5">
-				 <option></option>
+				 <option value="noOption"></option>
 				<option>A</option>
 				<option>B</option>
 				<option>C</option>

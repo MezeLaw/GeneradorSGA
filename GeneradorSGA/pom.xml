@@ -50,5 +50,11 @@
   		<artifactId>taglibs-standard-impl</artifactId>
   		<version>1.2.5</version>
   	</dependency>
+  	<!-- Dependencia para el buen funcionamiento del ajax -->
+  	<dependency>
+    	<groupId>org.codehaus.jackson</groupId>
+	    <artifactId>jackson-mapper-asl</artifactId>
+	    <version>1.6.4</version>
+	</dependency>
   </dependencies>
 </project>
