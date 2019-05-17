@@ -21,7 +21,7 @@
 	
 <!-- </script> -->
 </head>
-<body style="height:100%;">
+<body class="container">
 
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
@@ -29,7 +29,7 @@
 	<br>
 	<br>
 	<!--  Inicio elementos de la pagina -->
-	<div class="container heightAuto" style="margin-top: 50px" >
+	<div class="heightAuto" style="margin-top: 50px" >
 		<h1>Bienvenido!</h1>
 		<hr>
 		<div class="row">
