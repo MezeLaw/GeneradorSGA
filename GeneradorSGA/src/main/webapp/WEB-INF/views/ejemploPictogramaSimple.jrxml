@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ejemploPictogramaSimple" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="36c850e6-4410-4707-acbc-a9ac6f1a5bf5">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="220" y="10" width="410" height="60" uuid="4b927984-123a-433c-aa1e-17e1cd07bc7a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[NAFTA SUPERRRRRRRRRRRRRRRRR]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="85" splitType="Stretch">
+			<image>
+				<reportElement x="30" y="10" width="70" height="75" uuid="99c52c50-8c72-4f2a-a5db-1c556e7c119b"/>
+				<imageExpression><![CDATA["C:/Users/Meze/Desktop/inflamable.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="126" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

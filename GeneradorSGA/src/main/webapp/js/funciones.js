@@ -22,18 +22,44 @@ if ($('.chosen-container-single').length > 0) {
 
 function generarPDF() {
 	
+//	$.ajax({
+//		  url: "/GeneradorSGA/Etiquetas/generarRotulo",
+//		  data: "ATR",
+//		  type: "POST",
+//		  dataType: 'native',
+//		  responseType: "blob",
+//		  success:function(blob){
+//			    console.log(blob.size);
+//			      var link=document.createElement('a');
+//			      link.href=window.URL.createObjectURL(blob);
+//			      link.download="Etiqueta_" + new Date() + ".pdf";
+//			      link.click();
+//			  },
+//		  error: function(response){
+//			  alert("fallaste en el back de back perro..")
+//		  }
+//		});
+	
+	
 	$.ajax({
-		  url: "/GeneradorSGA/Etiquetas/generarRotulo",
-		  data: "ATR",
-		  type: "POST",
-		  dataType: "json",
-		  success: function(response){
-			  tuvisteExito();
-		  },
-		  error: function(response){
-			  alert("fallaste en el back de back perro..")
-		  }
-		});
+//        url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/172905/test.pdf',
+		url: '/GeneradorSGA/Etiquetas/generarRotulo',
+    method: 'GET',
+    xhrFields: {
+        responseType: 'blob'
+    },
+    data:{
+     "numeroComprobante" : 12
+    },
+    success: function (data) {
+        var a = document.createElement('a');
+        var url = window.URL.createObjectURL(data);
+        a.href = url;
+        a.download = 'myfile.pdf';
+        a.click();
+        window.URL.revokeObjectURL(url);
+    }
+});
 }
 
 function tuvisteExito(){
