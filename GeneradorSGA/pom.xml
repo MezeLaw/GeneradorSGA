@@ -1,76 +1,87 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mz</groupId>
-  <artifactId>GeneradorSGA</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.0.0</version>
-      </plugin>
-    </plugins>
-  </build>
-  <properties>
-  	<org.springframework.version>5.0.6.RELEASE</org.springframework.version>
-  </properties>
-  <dependencies>
-  	<dependency>
-  		<groupId>org.springframework</groupId>
-  		<artifactId>spring-webmvc</artifactId>
-  		<version>${org.springframework.version}</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.springframework</groupId>
-  		<artifactId>spring-test</artifactId>
-  		<version>${org.springframework.version}</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>junit</groupId>
-  		<artifactId>junit</artifactId>
-  		<version>4.12</version>
-  		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.servlet.jsp.jstl</groupId>
-  		<artifactId>javax.servlet.jsp.jstl-api</artifactId>
-  		<version>1.2.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.apache.taglibs</groupId>
-  		<artifactId>taglibs-standard-impl</artifactId>
-  		<version>1.2.5</version>
-  	</dependency>
-  	<!-- Dependencia para el buen funcionamiento del ajax -->
-  	<dependency>
-    	<groupId>org.codehaus.jackson</groupId>
-	    <artifactId>jackson-mapper-asl</artifactId>
-	    <version>1.6.4</version>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
-<!-- <dependency> -->
-<!--     <groupId>commons-logging</groupId> -->
-<!--     <artifactId>commons-logging</artifactId> -->
-<!--     <version>1.2</version> -->
-<!-- </dependency> -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mz</groupId>
+	<artifactId>GeneradorSGA</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+		</plugins>
+	</build>
+	<properties>
+		<org.springframework.version>5.0.6.RELEASE</org.springframework.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.taglibs</groupId>
+			<artifactId>taglibs-standard-impl</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+		<!-- Dependencia para el buen funcionamiento del ajax -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.6.4</version>
+		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+		<!-- <dependency> -->
+		<!-- <groupId>commons-logging</groupId> -->
+		<!-- <artifactId>commons-logging</artifactId> -->
+		<!-- <version>1.2</version> -->
+		<!-- </dependency> -->
 
+		<!-- <dependency> -->
+		<!-- <groupId>xml-apis</groupId> -->
+		<!-- <artifactId>xml-apis</artifactId> -->
+		<!-- <version>1.4.01</version> -->
+		<!-- </dependency> -->
 
-<!-- <dependency> -->
-<!--                 <groupId>xml-apis</groupId> -->
-<!--                 <artifactId>xml-apis</artifactId> -->
-<!--                 <version>1.4.01</version> -->
-<!-- </dependency> -->
-	
-  </dependencies>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+	</dependencies>
 </project>
