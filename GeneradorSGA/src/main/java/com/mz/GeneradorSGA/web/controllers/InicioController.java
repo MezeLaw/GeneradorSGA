@@ -23,14 +23,14 @@ public class InicioController {
 	@RequestMapping(value = "/noticias")
 	public ModelAndView mostrarNoticias() {
 		String now = (new Date()).toString();
-		logger.info("Returning hello view with " + now);
+		logger.info("Returning Noticias view with " + now);
 		return new ModelAndView("noticias", "now", now);
 	}
 
 	@RequestMapping(value = "/generarRotulo")
 	public ModelAndView generarRotulo() {
 		String now = (new Date()).toString();
-		logger.info("Returning hello view with " + now);
+		logger.info("Returning GenerarRotulo view with " + now);
 		return new ModelAndView("generadorSGA", "now", now);
 	}
 
