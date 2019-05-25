@@ -62,7 +62,8 @@
 			Generar Rotulo</button>
 	</div>
 
-
+	<a href="/GeneradorSGA/Etiquetas/generarPDF2" class="button">Go GenerarPDF 2</a>
+	
 	<!--  Fin inclusion de elementos del site -->
 
 	<!--  Inicio inclusion del footer -->

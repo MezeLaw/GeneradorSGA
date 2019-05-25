@@ -43,7 +43,7 @@ function generarPDF() {
 	
 	$.ajax({
 //        url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/172905/test.pdf',
-		url: '/GeneradorSGA/Etiquetas/generarRotulo',
+		url: '/GeneradorSGA/Etiquetas/generarPDF',
     method: 'GET',
     xhrFields: {
         responseType: 'blob'

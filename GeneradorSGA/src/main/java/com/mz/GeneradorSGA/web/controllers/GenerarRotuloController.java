@@ -32,14 +32,14 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 public class GenerarRotuloController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
-	
-	@RequestMapping(value = "/generarRotulo", method = RequestMethod.GET)
+
+	@RequestMapping(value = "/generarPDF", method = RequestMethod.GET)
 	public void generarPreFactura(HttpServletRequest request, HttpServletResponse response,
 			@RequestParam Integer numeroComprobante) {
-		logger.info("Entraste a /Etiquetas/generarRotulo");
+		logger.info("Entraste a /Etiquetas/generarPDF");
 		try {
 
-			logger.info("Entraste al try de /Etiquetas/generarRotulo");
+			logger.info("Entraste al try de /Etiquetas/generarPDF");
 			JasperReport report = JasperCompileManager.compileReport(
 					request.getSession().getServletContext().getRealPath("/WEB-INF/views/reporte1.jrxml"));
 			JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
@@ -53,4 +53,22 @@ public class GenerarRotuloController {
 		}
 	}
 
+	@RequestMapping(value = "/generarPDF2", method = RequestMethod.GET)
+	public void generarPreFactura2(HttpServletRequest request, HttpServletResponse response) {
+		logger.info("Entraste a /Etiquetas/generarPDF2");
+		try {
+
+			logger.info("Entraste al try de /Etiquetas/generarPDF2");
+			JasperReport report = JasperCompileManager.compileReport(
+					request.getSession().getServletContext().getRealPath("/WEB-INF/views/reporte1.jrxml"));
+			JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
+
+			response.setContentType("application/x-download");
+			response.addHeader("Content-disposition", "attachment; filename=StatisticsrReport1.pdf");
+			OutputStream out = response.getOutputStream();
+			JasperExportManager.exportReportToPdfStream(jasperPrint, out);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
