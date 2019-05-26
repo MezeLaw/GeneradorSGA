@@ -35,7 +35,7 @@ public class GenerarRotuloController {
 
 	@RequestMapping(value = "/generarPDF", method = RequestMethod.GET)
 	public void generarPreFactura(HttpServletRequest request, HttpServletResponse response,
-			@RequestParam Integer numeroComprobante) {
+			@RequestParam String codigoChosen) {
 		logger.info("Entraste a /Etiquetas/generarPDF");
 		try {
 

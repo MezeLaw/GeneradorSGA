@@ -17,10 +17,6 @@
 				</textElement>
 				<text><![CDATA[Elemento "X"]]></text>
 			</staticText>
-			<image>
-				<reportElement x="30" y="0" width="70" height="70" uuid="9453abfc-fae6-4b18-b840-e9a4fd28e645"/>
-				<imageExpression><![CDATA["C:/Users/Meze/Desktop/inflamable.jpg"]]></imageExpression>
-			</image>
 		</band>
 	</title>
 	<pageHeader>
@@ -43,7 +39,7 @@
 				<textElement>
 					<font size="20"/>
 				</textElement>
-				<text><![CDATA[PUTO EL QUE LEE]]></text>
+				<text><![CDATA[Please God!]]></text>
 			</staticText>
 		</band>
 	</detail>
