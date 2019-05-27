@@ -11,6 +11,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,88 +31,45 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 @RequestMapping(value = "/Etiquetas")
 public class GenerarRotuloController {
 
-//	@RequestMapping(value = "/generarRotulo", method = RequestMethod.GET)
-//	public String generarRotulo(HttpServletRequest request, HttpServletResponse response) {
-//		System.out.println("XD");
-//		return "1";
-//	}
 
-	// @RequestMapping(value = "/generarRotulo", method = RequestMethod.POST)
-	// private void performTask(HttpServletRequest request, HttpServletResponse
-	// response)
-	// throws ServletException, IOException {
-	//
-	// String pdfFileName = "pdf-test.pdf";
-	// // String contextPath = getServletContext().getRealPath(File.separator);
-	// File pdfFile = new File(pdfFileName);
-	//
-	// response.setContentType("application/pdf");
-	// response.addHeader("Content-Disposition", "attachment; filename=" +
-	// pdfFileName);
-	// response.setContentLength((int) pdfFile.length());
-	//
-	// FileInputStream fileInputStream = new FileInputStream(pdfFile);
-	// OutputStream responseOutputStream = response.getOutputStream();
-	// int bytes;
-	// while ((bytes = fileInputStream.read()) != -1) {
-	// responseOutputStream.write(bytes);
-	// }
-	//
-	// }
-//	@RequestMapping(value = "/generarRotulo", method = RequestMethod.GET)
-//	private void performTask(HttpServletRequest request, HttpServletResponse response)
-//			throws ServletException, IOException {
-//
-//		String pdfFileName = "pdf-test.pdf";
-//		String contextPath = request.getServletContext().getRealPath(File.separator);
-//		File pdfFile = new File(contextPath + pdfFileName);
-//
-//		response.setContentType("application/pdf");
-//		response.addHeader("Content-Disposition", "attachment; filename=" + pdfFileName);
-//		response.setContentLength((int) pdfFile.length());
-//
-//		FileInputStream fileInputStream = new FileInputStream(pdfFile);
-//		OutputStream responseOutputStream = response.getOutputStream();
-//		int bytes;
-//		while ((bytes = fileInputStream.read()) != -1) {
-//			responseOutputStream.write(bytes);
-//		}
-//
-//	}
-	
-	
-	
-	
-	@RequestMapping(value = "/generarRotulo", method = RequestMethod.GET)
-	public void generarPreFactura(HttpServletRequest request, HttpServletResponse response, @RequestParam Integer numeroComprobante) {
+	protected final Log logger = LogFactory.getLog(getClass());
 
-//		List<ItemPreFactura> lista = facturaService.listarDetallesPorNumeroComprobante(numeroComprobante).getItemPreFacturas();
-//		UserDetailImpl userDetails = (UserDetailImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
+	@RequestMapping(value = "/generarPDF", method = RequestMethod.GET)
+	public void generarPreFactura(HttpServletRequest request, HttpServletResponse response,
+			@RequestParam String codigoChosen) {
+		logger.info("Entraste a /Etiquetas/generarPDF");
 		try {
-			Map parameters = new HashMap();
 
-//			JRBeanCollectionDataSource jrList = new JRBeanCollectionDataSource(lista);
-			//parametros
-//			parameters.put("PRESTADOR_ID", userDetails.getPrestador().getCodigo());
-//			parameters.put("RAZON_SOCIAL", userDetails.getPrestador().getRazonSocial());
-//			parameters.put("NRO_COMPROBANTE", numeroComprobante.toString());
-//			parameters.put("PERIODO", "Marzo 2019");//TODO: pasar periodo correctamente
-//			parameters.put("PREFACTURAS_LIST", jrList);
-
-            JasperReport report = JasperCompileManager.compileReport(request.getSession().getServletContext().getRealPath("/views/ejemploPictogramaSimple.jrxml"));
-			JasperPrint jasperPrint = JasperFillManager.fillReport(report, parameters, new JREmptyDataSource());
+			logger.info("Entraste al try de /Etiquetas/generarPDF");
+			JasperReport report = JasperCompileManager.compileReport(
+					request.getSession().getServletContext().getRealPath("/WEB-INF/views/reporte1.jrxml"));
+			JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
 
 			response.setContentType("application/x-download");
 			response.addHeader("Content-disposition", "attachment; filename=StatisticsrReport1.pdf");
 			OutputStream out = response.getOutputStream();
-			JasperExportManager.exportReportToPdfStream(jasperPrint,out);
-		}
-		catch (Exception e) {
+			JasperExportManager.exportReportToPdfStream(jasperPrint, out);
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	
 
+	@RequestMapping(value = "/generarPDF2", method = RequestMethod.GET)
+	public void generarPreFactura2(HttpServletRequest request, HttpServletResponse response) {
+		logger.info("Entraste a /Etiquetas/generarPDF2");
+		try {
+
+			logger.info("Entraste al try de /Etiquetas/generarPDF2");
+			JasperReport report = JasperCompileManager.compileReport(
+					request.getSession().getServletContext().getRealPath("/WEB-INF/views/reporte1.jrxml"));
+			JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
+
+			response.setContentType("application/x-download");
+			response.addHeader("Content-disposition", "attachment; filename=StatisticsrReport1.pdf");
+			OutputStream out = response.getOutputStream();
+			JasperExportManager.exportReportToPdfStream(jasperPrint, out);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
