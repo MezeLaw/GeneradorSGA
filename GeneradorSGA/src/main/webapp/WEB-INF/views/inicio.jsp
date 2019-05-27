@@ -10,30 +10,33 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-<link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>" rel="stylesheet">
-	
+<link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>"
+	rel="stylesheet">
+
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <!-- <script type="text/javascript" src="js/votacion.js"> -->
-	
+
 <!-- </script> -->
 </head>
 <body class="container">
-
+<section>
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
 	<!--  Fin inclusion navBar -->
+</section>
 	<br>
 	<br>
 	<!--  Inicio elementos de la pagina -->
-	<div class="heightAuto" style="margin-top: 50px" >
+	<section>
+	<div class="heightAuto" style="margin-top: 50px">
 		<h1>Bienvenido!</h1>
 		<hr>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-12">
 				<p>Es un agrado poder darle la bienvenida al primer GeneradorSGA
 					online.</p>
 				<p>Nuestra aplicacion web es el resultado de una iniciativa que
@@ -44,57 +47,40 @@
 					a dia en distintas industrias y no sabe exactamente la forma
 					correcta de hacerlo.</p>
 			</div>
-
-			<div class="col-md-4">
-				<!-- Aca puede ir una imagen? -->
-			</div>
 		</div>
 
 		<div class="row">
 
-			<div class="col-md-4">
+			<div class="col-md-12">
 				<p>Desde la pestaña "Generador de SGA", podra buscar por el
 					nombre del material en cuestion y con solo hacer click en "Generar"
 					se descargara una copia de un modelo de rotulado. Los estilos
 					pueden cambiarse a su gusto con software de terceros, nuestro
 					objetivo y desarrollo solo desea ser orientativo. Aun asi, tambien
-					puede ser utilizado sin modificaciones posteriores.</p>
-				<!--       <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p> -->
+					puede ser utilizado sin modificaciones posteriores. Adicionalmente,
+					si usted desea obtener el rotulado de un material/compuesto que no
+					disponemos, podra escribirnos y enviarnos la mayor informacion que
+					posea y sera agregada a la inmediatez.</p>
 			</div>
-
 		</div>
-
-
 
 		<div class="row">
 
-			<div class="col-md-4">
-				<p>Adicionalmente, si usted desea obtener el rotulado de un
-					material/compuesto que no disponemos, podra escribirnos y enviarnos
-					la mayor informacion que posea y sera agregada a la inmediatez.</p>
-				<!--       <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p> -->
-			</div>
-
-		</div>
-
-
-		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-12">
 				<p>Los saluda atentamente, el staff de GeneradorSGA.</p>
 			</div>
 		</div>
-
 	</div>
-
+</section>
 
 
 	<!--  Fin inclusion de elementos del site -->
 
 	<!--  Inicio inclusion del footer -->
-
+<section>
 	<%@include file="footerSitio.jsp"%>
 
 	<!--  Fin inclusion del footer -->
-
+</section>
 </body>
 </html>

@@ -1,10 +1,12 @@
 package com.mz.GeneradorSGA.web.controllers;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,14 +25,20 @@ public class InicioController {
 	@RequestMapping(value = "/noticias")
 	public ModelAndView mostrarNoticias() {
 		String now = (new Date()).toString();
-		logger.info("Returning hello view with " + now);
+		logger.info("Returning Noticias view with " + now);
 		return new ModelAndView("noticias", "now", now);
 	}
 
 	@RequestMapping(value = "/generarRotulo")
-	public ModelAndView generarRotulo() {
+	public ModelAndView generarRotulo(Model model) {
 		String now = (new Date()).toString();
-		logger.info("Returning hello view with " + now);
+		logger.info("Returning GenerarRotulo view with " + now);
+		ArrayList<String> lista = new ArrayList<String>();
+		lista.add("Monoxido de Carbono");
+		lista.add("Butano");
+		lista.add("Banana podrida");
+		
+		model.addAttribute("codigosElementos", lista);
 		return new ModelAndView("generadorSGA", "now", now);
 	}
 

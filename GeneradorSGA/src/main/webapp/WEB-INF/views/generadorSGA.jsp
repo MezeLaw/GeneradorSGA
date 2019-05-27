@@ -44,25 +44,28 @@
 		<div class="container">
 			<select id="selectElemento" data-placeholder="Seleccione el elemento.."
 				 class="sel col-xs-5">
-				 <option value="noOption"></option>
-				<option>A</option>
-				<option>B</option>
-				<option>C</option>
-				<option>D</option>
-				<option>E</option>
-				<option>F</option>
-				<option>G</option>
+				 <option value="noOption"></option>	 
+				<c:forEach var="cod" items="${codigosElementos}">
+				   	<option value="${cod}">${cod}</option>
+				</c:forEach>
 			</select>
 		</div>
 		<br>
 	</div>
 	<br>
 	<div class="row col-md-9 col-xs-9">
-		<button class="btn btn-primary pull-right" onclick="generarPDF();">
+		<button id="generarPDF" class="btn btn-primary pull-right" onclick="generarPDF();">
 			Generar Rotulo</button>
 	</div>
-
-
+	<input id="inputCodigo" value="NADA">
+	<a href="${appCtx}/Etiquetas/generarPDF2" class="btn btn-primary pull-right">Funca pero necesito agregar el select elegido</a>
+	
+	
+	
+	
+<!-- 	<a id="generarPDF3" onclick ="generarPDF2();" class="btn btn-primary pull-right">Go GenerarPDF 3</a> -->
+	
+	
 	<!--  Fin inclusion de elementos del site -->
 
 	<!--  Inicio inclusion del footer -->

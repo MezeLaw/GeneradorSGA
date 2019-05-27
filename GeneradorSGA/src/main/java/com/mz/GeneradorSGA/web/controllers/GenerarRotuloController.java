@@ -34,6 +34,7 @@ public class GenerarRotuloController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
+
 	@RequestMapping(value = "/generarPDF", method = RequestMethod.GET)
 	public void generarPreFactura(HttpServletRequest request, HttpServletResponse response,
 			@RequestParam String codigoChosen) {
