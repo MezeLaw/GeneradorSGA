@@ -13,30 +13,27 @@
 <link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>"
 	rel="stylesheet">
 
-
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="js/votacion.js"> -->
 
-<!-- </script> -->
 </head>
 <body class="container">
-<section>
+
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
 	<!--  Fin inclusion navBar -->
-</section>
-	<br>
-	<br>
+
+	<hr>
+	<hr>
 	<!--  Inicio elementos de la pagina -->
-	<section>
+	
 	<div class="heightAuto" style="margin-top: 50px">
-		<h1>Bienvenido!</h1>
+		<h1>Bienvenido</h1>
 		<hr>
-		<div class="row">
-			<div class="col-md-12">
+		<div class="row col-md-12 col-xs-12">
+			<div class="col-md-12 col-xs-12">
 				<p>Es un agrado poder darle la bienvenida al primer GeneradorSGA
 					online.</p>
 				<p>Nuestra aplicacion web es el resultado de una iniciativa que
@@ -49,9 +46,9 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row col-md-12 col-xs-12">
 
-			<div class="col-md-12">
+			<div class="col-md-12 col-xs-12">
 				<p>Desde la pestaña "Generador de SGA", podra buscar por el
 					nombre del material en cuestion y con solo hacer click en "Generar"
 					se descargara una copia de un modelo de rotulado. Los estilos
@@ -64,23 +61,23 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row col-md-12 col-xs-12">
 
-			<div class="col-md-12">
+			<div class="col-md-12 col-xs-12">
 				<p>Los saluda atentamente, el staff de GeneradorSGA.</p>
 			</div>
 		</div>
 	</div>
-</section>
+
 
 
 	<!--  Fin inclusion de elementos del site -->
 
 	<!--  Inicio inclusion del footer -->
-<section>
+
 	<%@include file="footerSitio.jsp"%>
 
 	<!--  Fin inclusion del footer -->
-</section>
+
 </body>
 </html>

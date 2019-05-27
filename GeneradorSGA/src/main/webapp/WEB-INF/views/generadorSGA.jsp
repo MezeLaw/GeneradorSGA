@@ -28,7 +28,7 @@
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
 
 </head>
-<body style="">
+<body class="container">
 
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
@@ -37,7 +37,7 @@
 	<hr>
 
 	<!--  Inicio elementos de la pagina -->
-	<div class="container" style="margin-top: 50px">
+	<div class="heightAuto" style="margin-top: 50px">
 		<h1>Generar Rotulo</h1>
 		<hr>
 
@@ -57,14 +57,6 @@
 		<button id="generarPDF" class="btn btn-primary pull-right" onclick="generarPDF();">
 			Generar Rotulo</button>
 	</div>
-	<input id="inputCodigo" value="NADA">
-	<a href="${appCtx}/Etiquetas/generarPDF2" class="btn btn-primary pull-right">Funca pero necesito agregar el select elegido</a>
-	
-	
-	
-	
-<!-- 	<a id="generarPDF3" onclick ="generarPDF2();" class="btn btn-primary pull-right">Go GenerarPDF 3</a> -->
-	
 	
 	<!--  Fin inclusion de elementos del site -->
 

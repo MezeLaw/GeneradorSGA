@@ -22,9 +22,9 @@ if ($('.chosen-container-single').length > 0) {
 /* Inicio funciones */
 
 function generarPDF() {
-
+	
 	$.ajax({
-		url : '/GeneradorSGA/Etiquetas/generarPDF',
+		url : 'Etiquetas/generarPDF',
 		method : 'GET',
 		xhrFields : {
 			responseType : 'blob'
@@ -36,7 +36,7 @@ function generarPDF() {
 			var a = document.createElement('a');
 			var url = window.URL.createObjectURL(data);
 			a.href = url;
-			a.download = 'myfile.pdf';
+			a.download = 'Rotulo-SGA.pdf';
 			a.click();
 			window.URL.revokeObjectURL(url);
 		}
@@ -44,9 +44,3 @@ function generarPDF() {
 
 }
 
-
-function generarPDF2(){
-	var href = "/Etiquetas/generarPDF2";
-	
-	$("#generarPDF3").attr("href",  href);
-}

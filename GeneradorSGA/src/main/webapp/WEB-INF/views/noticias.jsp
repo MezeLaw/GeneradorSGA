@@ -18,7 +18,7 @@
 	
 <!-- </script> -->
 </head>
-<body style="">
+<body class="container">
 
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
@@ -27,10 +27,19 @@
 	<hr>
 
 	<!--  Inicio elementos de la pagina -->
-	<div class="container" style="margin-top: 50px">
-		
-		<h1>Noticias</h1>
+	<div class="heightAuto" style="margin-top: 50px">
+			
+			
+			
+			<h1>Noticias</h1>
 		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<p>Al momento no tenemos noticias nuevas, regresa luego!</p>
+				
+			</div>
+		</div>
+
 	</div>
 
 
