@@ -42,8 +42,9 @@ public class GenerarRotuloController {
 					request.getSession().getServletContext().getRealPath("/WEB-INF/views/reporte1.jrxml"));
 			JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
 
-			response.setContentType("application/x-download");
-			response.addHeader("Content-disposition", "attachment; filename=StatisticsrReport1.pdf");
+//			response.setContentType("application/x-download");
+			response.setContentType("application/pdf");
+			response.addHeader("Content-disposition", "attachment");
 			OutputStream out = response.getOutputStream();
 			JasperExportManager.exportReportToPdfStream(jasperPrint, out);
 		} catch (Exception e) {

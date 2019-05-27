@@ -28,12 +28,12 @@
 	<hr>
 	<hr>
 	<!--  Inicio elementos de la pagina -->
-	
+
 	<div class="heightAuto" style="margin-top: 50px">
 		<h1>Bienvenido</h1>
 		<hr>
-		<div class="row col-md-12 col-xs-12">
-			<div class="col-md-12 col-xs-12">
+		<div class="col-md-12 col-xs-12">
+		
 				<p>Es un agrado poder darle la bienvenida al primer GeneradorSGA
 					online.</p>
 				<p>Nuestra aplicacion web es el resultado de una iniciativa que
@@ -43,12 +43,7 @@
 					encargue de rotular los materiales con los que se trabaja en el dia
 					a dia en distintas industrias y no sabe exactamente la forma
 					correcta de hacerlo.</p>
-			</div>
-		</div>
-
-		<div class="row col-md-12 col-xs-12">
-
-			<div class="col-md-12 col-xs-12">
+				<br>
 				<p>Desde la pestaña "Generador de SGA", podra buscar por el
 					nombre del material en cuestion y con solo hacer click en "Generar"
 					se descargara una copia de un modelo de rotulado. Los estilos
@@ -58,17 +53,13 @@
 					si usted desea obtener el rotulado de un material/compuesto que no
 					disponemos, podra escribirnos y enviarnos la mayor informacion que
 					posea y sera agregada a la inmediatez.</p>
-			</div>
-		</div>
+					
+					<p>Los saluda atentamente, el staff de GeneradorSGA.</p>
+				<br>
+				
 
-		<div class="row col-md-12 col-xs-12">
-
-			<div class="col-md-12 col-xs-12">
-				<p>Los saluda atentamente, el staff de GeneradorSGA.</p>
-			</div>
 		</div>
 	</div>
-
 
 
 	<!--  Fin inclusion de elementos del site -->
