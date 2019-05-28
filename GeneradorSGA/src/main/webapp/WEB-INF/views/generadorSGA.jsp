@@ -60,10 +60,6 @@
 			onclick="generarPDF();">Generar Rotulo</button>
 	</div>
 
-
-
-
-
 	<!--  Fin inclusion de elementos del site -->
 
 	<!--  Inicio inclusion del footer -->
