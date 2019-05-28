@@ -21,10 +21,10 @@
 
 <script type="text/javascript"
 	src="<c:url value="/js/chosen.jquery.js" />"></script>
-	
+
 <script type="text/javascript"
-	src="<c:url value="/js/chosen.jquery.min.js" />"></script>	
-	
+	src="<c:url value="/js/chosen.jquery.min.js" />"></script>
+
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
 
 </head>
@@ -38,26 +38,32 @@
 
 	<!--  Inicio elementos de la pagina -->
 	<div class="heightAuto" style="margin-top: 50px">
+
+
 		<h1>Generar Rotulo</h1>
 		<hr>
 
-		<div class="container">
-			<select id="selectElemento" data-placeholder="Seleccione el elemento.."
-				 class="sel col-xs-5">
-				 <option value="noOption"></option>	 
+		<div class="row wrapper">
+			<select id="selectElemento"
+				data-placeholder="Seleccione el elemento.." class="sel col-xs-5">
+				<option value="noOption"></option>
 				<c:forEach var="cod" items="${codigosElementos}">
-				   	<option value="${cod}">${cod}</option>
+					<option value="${cod}">${cod}</option>
 				</c:forEach>
 			</select>
 		</div>
 		<br>
 	</div>
 	<br>
-	<div class="row col-md-9 col-xs-9">
-		<button id="generarPDF" class="btn btn-primary pull-right" onclick="generarPDF();">
-			Generar Rotulo</button>
+	<div class="row col-md-9 col-xs-9 wrapper">
+		<button id="generarPDF" class="btn btn-primary pull-right"
+			onclick="generarPDF();">Generar Rotulo</button>
 	</div>
-	
+
+
+
+
+
 	<!--  Fin inclusion de elementos del site -->
 
 	<!--  Inicio inclusion del footer -->

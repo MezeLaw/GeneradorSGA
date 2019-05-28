@@ -28,15 +28,14 @@
 
 	<!--  Inicio elementos de la pagina -->
 	<div class="heightAuto" style="margin-top: 50px">
-			
-			
-			
-			<h1>Noticias</h1>
+
+
+		<h1>Noticias</h1>
 		<hr>
-		<div class="row">
+		<div class="row wrapper">
 			<div class="col-md-12">
 				<p>Al momento no tenemos noticias nuevas, regresa luego!</p>
-				
+
 			</div>
 		</div>
 
