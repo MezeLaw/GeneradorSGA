@@ -9,9 +9,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="87" splitType="Stretch">
+		<band height="56" splitType="Stretch">
 			<staticText>
-				<reportElement x="160" y="10" width="265" height="65" uuid="87dedf62-db11-4549-a7ba-2e18e1e13083"/>
+				<reportElement x="160" y="10" width="265" height="40" uuid="87dedf62-db11-4549-a7ba-2e18e1e13083"/>
 				<textElement>
 					<font size="20"/>
 				</textElement>
@@ -20,36 +20,31 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="72" splitType="Stretch">
+			<image>
+				<reportElement x="40" y="10" width="50" height="50" uuid="6825ca30-0dc0-44c9-8d31-50b61fb08646"/>
+				<imageExpression><![CDATA["/src/main/webapp/img/inflamable.jpg"]]></imageExpression>
+			</image>
+		</band>
 	</pageHeader>
-	<columnHeader>
-		<band height="61" splitType="Stretch"/>
-	</columnHeader>
 	<detail>
 		<band height="125" splitType="Stretch">
 			<staticText>
-				<reportElement x="10" y="20" width="535" height="40" uuid="18376bdf-d466-4f30-9a32-5fb90da0a342"/>
+				<reportElement x="0" y="10" width="535" height="40" uuid="18376bdf-d466-4f30-9a32-5fb90da0a342"/>
 				<textElement>
-					<font size="20"/>
+					<font size="14"/>
 				</textElement>
-				<text><![CDATA[Esto es un reporte de prueba :) ]]></text>
+				<text><![CDATA[Riesgos:
+Prueba]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="240" y="60" width="300" height="49" uuid="cc442003-57b4-467a-9228-47623de78b11"/>
+				<reportElement x="0" y="70" width="541" height="41" uuid="fb4d7e3a-bcb5-4262-ae1a-e690161951b8"/>
 				<textElement>
-					<font size="20"/>
+					<font size="14"/>
 				</textElement>
-				<text><![CDATA[Please God!]]></text>
+				<text><![CDATA[Caracteristicas:
+Prueba]]></text>
 			</staticText>
 		</band>
 	</detail>
-	<columnFooter>
-		<band height="45" splitType="Stretch"/>
-	</columnFooter>
-	<pageFooter>
-		<band height="54" splitType="Stretch"/>
-	</pageFooter>
-	<summary>
-		<band height="42" splitType="Stretch"/>
-	</summary>
 </jasperReport>
