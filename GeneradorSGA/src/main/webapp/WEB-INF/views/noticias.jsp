@@ -10,6 +10,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
@@ -35,7 +36,14 @@
 		<div class="row wrapper">
 			<div class="col-md-12">
 				<p>Al momento no tenemos noticias nuevas, regresa luego!</p>
-
+				
+				
+				<i class="fa fa-cloud"></i>
+<i class="fa fa-heart"></i>
+<i class="fa fa-car"></i>
+<i class="fa fa-file"></i>
+<i class="fa fa-bars"></i>
+				
 			</div>
 		</div>
 

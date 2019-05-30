@@ -36,7 +36,8 @@ public class InicioController {
 		ArrayList<String> lista = new ArrayList<String>();
 		lista.add("Monoxido de Carbono");
 		lista.add("Butano");
-		lista.add("Banana podrida");
+		lista.add("Oxigeno");
+		lista.add("Carburo");
 		
 		model.addAttribute("codigosElementos", lista);
 		return new ModelAndView("generadorSGA", "now", now);

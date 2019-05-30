@@ -24,17 +24,14 @@
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
 	<!--  Fin inclusion navBar -->
-
-	<hr>
-	<hr>
-	<!--  Inicio elementos de la pagina -->
-
+	<br>
+	<br>
 	<!--  Inicio elementos de la pagina -->
 	<div class="heightAuto" style="margin-top: 50px">
 
 		<h1>Bienvenido</h1>
 		<hr>
-		<div class="row wrapper">
+		<div class="row wrapper col-md-12">
 			<div class="col-md-12">
 				<p>Es un agrado poder darle la bienvenida al primer GeneradorSGA
 					online.</p>
@@ -45,7 +42,6 @@
 					encargue de rotular los materiales con los que se trabaja en el dia
 					a dia en distintas industrias y no sabe exactamente la forma
 					correcta de hacerlo.</p>
-				<br>
 				<p>Desde la pestaña "Generador de SGA", podra buscar por el
 					nombre del material en cuestion y con solo hacer click en "Generar"
 					se descargara una copia de un modelo de rotulado. Los estilos
@@ -61,7 +57,6 @@
 
 			</div>
 		</div>
-
 	</div>
 
 

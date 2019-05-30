@@ -16,7 +16,7 @@
 				src="img/logoBorde50x50.png" alt="GeneradorSGA"></a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav pull-right">
 				<li><a href="${appCtx}/inicio">Inicio</a></li>
 				<li><a href="${appCtx}/noticias">Noticias</a></li>
 				<li><a href="${appCtx}/generarRotulo">Generador SGA</a></li>

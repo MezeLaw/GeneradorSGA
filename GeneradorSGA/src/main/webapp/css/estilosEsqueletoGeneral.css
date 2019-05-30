@@ -1,53 +1,104 @@
 .hidden {
-  display: none;
-  visibility: hidden;
-} 
+	display: none;
+	visibility: hidden;
+}
 
-.alturaFooter{
-	height:55px;
-	background-color:#337180;
+.alturaFooter {
+	height: 55px;
+	background-color: #008080;
 	display: flex;
-  	justify-content: center;
-  	align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
-.letraBlanca{
-	color:white;
+.letraBlanca {
+	color: white;
 }
 
-.logo{
+.logo {
 	padding: 0px 0px !important;
 }
 
-a{
-	color:white;
+a {
+	color: white;
 }
 
-.navBarColor{
-	background-color:#337180 !important;
+.navBarColor {
+	/* 	background-color:#337180 !important; */
+	background-color: #008080 !important;
 }
 
-.blancoColor .icon-bar{
+.blancoColor .icon-bar {
 	background-color: white !important;
 }
 
-.heightAuto{
-	height:auto !important;
+.heightAuto {
+	height: auto !important;
 }
 
-body{
-	margin:0;
-	display:table;
-	height:100%;
-	width:100%;
+body {
+	margin: 0;
+	display: table;
+	height: 100%;
+	width: 100%;
 }
 
-.wrapper{
-	padding:20px;
-	height:auto;
+.wrapper {
+	padding: 20px;
+	height: auto;
 }
 
-footer{
-	display:table-row;
-	height:1px;
+footer {
+	display: table-row;
+	height: 1px;
 }
+
+h1 {
+	font-family: Cambria, Georgia, serif;
+	font-size: 37px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26.4px;
+}
+
+h3 {
+	font-family: Cambria, Georgia, serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
+}
+
+p {
+	font-family: Cambria, Georgia, serif;
+	font-size: 19px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+blockquote {
+	font-family: Cambria, Georgia, serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+pre {
+	font-family: Cambria, Georgia, serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+
+
+
+
+
