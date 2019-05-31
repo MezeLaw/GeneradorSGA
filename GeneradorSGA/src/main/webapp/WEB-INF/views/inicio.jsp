@@ -68,7 +68,7 @@
 
 		<div class="row wrapper col-md-4 " style="text-align: center">
 			<a
-				href="http://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=245850"
+				href="https://www.srt.gob.ar/wp-content/uploads/2018/06/01_SGA_Rev.5.pdf"
 				class="row  fa fa-flask fa-2x  " target="_blank" title="SGA"></a>
 		</div>
 
