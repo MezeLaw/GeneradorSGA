@@ -59,17 +59,17 @@
 			</div>
 		</div>
 
-		<div class="row wrapper col-md-4 centrarIconos">
+		<div class="row wrapper col-md-4 " style="text-align:center">
 			<a href="https://www.srt.gob.ar/index.php/sga/" class="fa fa-flask fa-2x" target="_blank" title="SRT"></a>
 		</div>
 
 
 
-		<div class="row wrapper col-md-4 centrarIconos">
+		<div class="row wrapper col-md-4 " style="text-align:center">
 			<a href="http://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=245850" class="row fa fa-globe fa-2x" target="_blank" title="SGA"></a>
 		</div>
 
-		<div class="row wrapper col-md-4 centrarIconos">
+		<div class="row wrapper col-md-4 " style="text-align:center">
 			<a href="http://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=245850" class="fa fa-book fa-2x" target="_blank" title="RES SRT 801/15"></a>
 		</div>
 	</div>
