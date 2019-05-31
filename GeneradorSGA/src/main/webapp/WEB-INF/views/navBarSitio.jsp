@@ -13,7 +13,7 @@
 					class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand logo" href="#"><img class="logo"
-				src="img/logoBorde50x50.png" alt="GeneradorSGA"></a>
+				src="img/flask50x50.jpg" alt="GeneradorSGA"></a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav pull-right">
