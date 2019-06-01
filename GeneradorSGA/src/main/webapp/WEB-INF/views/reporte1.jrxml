@@ -20,7 +20,7 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="72" splitType="Stretch">
+		<band height="83" splitType="Stretch">
 			<staticText>
 				<reportElement x="20" y="10" width="524" height="50" uuid="9c8e05dd-a2a5-4b2b-9c6b-d9dc5c597c90"/>
 				<textElement textAlignment="Center">
@@ -28,6 +28,10 @@
 				</textElement>
 				<text><![CDATA[Sector para imagenes]]></text>
 			</staticText>
+			<image>
+				<reportElement x="30" y="10" width="50" height="50" uuid="bd6aa450-d794-4ee4-8eb6-0888723bf11d"/>
+				<imageExpression><![CDATA["images/inflamable.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</pageHeader>
 	<detail>
