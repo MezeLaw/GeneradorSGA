@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporte1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8f4815af-8e1f-4a23-bf10-b8fecad24683">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="51" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="561" height="51" uuid="aed1d9de-4633-4bf5-b86b-f7544c7332ae"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="143" y="5" width="265" height="40" uuid="b93d6550-0ff6-4db1-a2bc-4f28457ab58b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Metanol]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="137" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="561" height="91" uuid="611d0f19-b85c-464f-9f6b-16516a8b38ba"/>
+			</rectangle>
+			<image>
+				<reportElement x="355" y="15" width="65" height="70" uuid="227bd52c-151c-4a8d-86f6-1e98dd19bdf2"/>
+				<imageExpression><![CDATA["images/danoOrganos.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="235" y="15" width="70" height="70" uuid="6d501155-6e5f-49cb-bf9c-6a475fe10b5c"/>
+				<imageExpression><![CDATA["images/peligro.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="115" y="15" width="70" height="70" uuid="5dda4022-6b16-496b-9e31-4905270f2c0f"/>
+				<imageExpression><![CDATA["images/inflamable.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="0" y="91" width="561" height="30" uuid="eefdde17-0f7e-42d3-afd1-4cc09df1d1f7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="3" y="100" width="112" height="14" uuid="700ae86e-6103-4b50-aa11-60f29ed35733"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Palabra de Advertencia:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="100" width="60" height="14" uuid="5022d296-6ee4-4e20-84d8-a1c94ee4ab20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="99" width="64" height="14" uuid="3b05ca91-1000-40d3-aba2-1b3ac3725c03"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Peligro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="100" width="60" height="14" uuid="703a2818-09f6-4a8b-92a4-39d905c62314"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[-]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="310" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-16" width="561" height="106" uuid="aa81e5ec-b644-450a-ab42-f7d29488bf01"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="-10" width="534" height="20" uuid="aa715add-91ef-496f-9840-c5834ee79c3e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indicación de Peligro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="10" width="535" height="80" uuid="f05f8b6b-9d98-4b29-a809-65f005b1ba02"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[H225  Líquido y vapores muy inflamables.
+H301 Tóxico en caso de ingestión. 
+H311 Tóxico en contacto con la piel. 
+H331 Tóxico en caso de inhalación.
+H370 Provoca daños en los órganos. ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="90" width="561" height="120" uuid="017f63ac-8721-4698-b965-d2bd6e97216f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="100" width="535" height="20" uuid="3c6900af-9c74-49d3-825e-57ba35e38688"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Criterios de Clasificación:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="120" width="538" height="60" uuid="975c7832-aa9d-4621-8500-a13a0c373f93"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Líquidos inflamables (Categoría 2).
+Toxicidad aguda, Inhalación (Categoría 3) 
+Toxicidad aguda, Cutáneo (Categoría 3) Toxicidad aguda, Oral (Categoría 3)
+Toxicidad específica en determinados órganos - exposición única (Categoría 1) 
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="200" width="561" height="110" uuid="659e1a23-996f-42a8-9131-e2a1d6a4566d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="3" y="210" width="538" height="20" uuid="8cd5afaf-2969-4a1b-a56c-73ebe80b7589"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OTROS PELIGROS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="230" width="538" height="70" uuid="f86a8712-9847-4cfb-8153-3bf3cf087bda"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Líquido fácilmente inflamable. Cuando se calienta, desprende humos tóxicos e irritantes. Los vapores forman mezclas explosivas con el aire. Los vapores pueden desplazarse hasta alcanzar fuentes de ignición e inflamarse.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="180" width="141" height="20" uuid="206ecc2b-0b53-4fe9-9b8f-8031b36a8f48"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Otras regulaciones:                                      ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="180" width="387" height="20" uuid="4bb6f2e8-c31d-48a6-931f-5d2d6fa288e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[-]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

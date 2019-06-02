@@ -1,9 +1,18 @@
-
 /* Inicio funciones */
-
+$(document).ready(function() {
+	var opcion = $("#elementos").val();
+	if ("" == opcion) {
+		$("#generarPDF").attr("disabled", true);
+	} else {
+		$("#generarPDF").attr("disabled", false);
+	}
+});
 
 function generarPDF() {
+	$("#generarPDF").attr("disabled", true);
 	
+	var codigo = $("#elementos").val();
+
 	$.ajax({
 		url : 'Etiquetas/generarPDF',
 		method : 'GET',
@@ -11,7 +20,7 @@ function generarPDF() {
 			responseType : 'blob'
 		},
 		data : {
-			"codigoChosen" : "12"
+			"codigo" : codigo
 		},
 		success : function(data) {
 			var a = document.createElement('a');
@@ -20,8 +29,22 @@ function generarPDF() {
 			a.download = 'Rotulo-SGA.pdf';
 			a.click();
 			window.URL.revokeObjectURL(url);
+			$("#generarPDF").attr("disabled", false);
+		},
+		error : function(data) {
+			// Saco el disabled al alert
+			$("#alertError").removeClass("hidden");
+			$("#generarPDF").attr("disabled", false);
 		}
 	});
 
 }
 
+function verificarOpcion() {
+	var opcion = $("#elementos").val();
+	if ("" == opcion) {
+		$("#generarPDF").attr("disabled", true);
+	} else {
+		$("#generarPDF").attr("disabled", false);
+	}
+};

@@ -38,6 +38,7 @@ public class InicioController {
 		lista.add("Butano");
 		lista.add("Oxigeno");
 		lista.add("Carburo");
+		lista.add("Metanol");
 		
 		model.addAttribute("codigosElementos", lista);
 		return new ModelAndView("generadorSGA", "now", now);

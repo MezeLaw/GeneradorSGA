@@ -45,19 +45,26 @@
 
 		<h1>Generar Rotulo</h1>
 		<hr>
+
+		<div id="alertError"
+			class="alert alert-danger alert-dismissible container hidden">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			Ocurri&oacute; un error inesperado. Lamentamos las molestias. Por
+			favor, int&eacute;ntelo nuevamente.
+		</div>
+
 		<div class="row wrapper col-md-12">
 			<select id="elementos" class="row selectpicker wrapper col-sm-12"
 				data-live-search="true" data-width="100%"
-				title="Ingrese su busqueda">
-				<option value="noOption"></option>
+				title="Ingrese su b&uacute;squeda" onchange="verificarOpcion();">
 				<c:forEach var="cod" items="${codigosElementos}">
 					<option value="${cod}">${cod}</option>
 				</c:forEach>
 			</select>
 		</div>
 
-		<div class="row wrapper col-md-8 " style="text-align: center">
-			<button id="generarPDF" class="btn btn-primary pull-right"
+		<div class="row wrapper col-sm-10" style="text-align: center">
+			<button id="generarPDF" class="btn btn-primary"
 				onclick="generarPDF();">Generar Rotulo</button>
 		</div>
 

@@ -1,9 +1,6 @@
 package com.mz.GeneradorSGA.web.controllers;
 
-
 import java.io.OutputStream;
-
-
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,26 +24,37 @@ import net.sf.jasperreports.engine.JasperReport;
 @RequestMapping(value = "/Etiquetas")
 public class GenerarRotuloController {
 
-
 	protected final Log logger = LogFactory.getLog(getClass());
-
 
 	@RequestMapping(value = "/generarPDF", method = RequestMethod.GET)
 	public void generarPreFactura(HttpServletRequest request, HttpServletResponse response,
-			@RequestParam String codigoChosen) {
+			@RequestParam String codigo) {
 		logger.info("Entraste a /Etiquetas/generarPDF");
 		try {
-
 			logger.info("Entraste al try de /Etiquetas/generarPDF");
-			JasperReport report = JasperCompileManager.compileReport(
-					request.getSession().getServletContext().getRealPath("/WEB-INF/views/reporte1.jrxml"));
-			JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
+			if (codigo.equals("Metanol")) {
 
-//			response.setContentType("application/x-download");
-			response.setContentType("application/pdf");
-			response.addHeader("Content-disposition", "attachment");
-			OutputStream out = response.getOutputStream();
-			JasperExportManager.exportReportToPdfStream(jasperPrint, out);
+				JasperReport report = JasperCompileManager.compileReport(
+						request.getSession().getServletContext().getRealPath("/WEB-INF/reports/reporteMetanol.jrxml"));
+				JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
+
+				response.setContentType("application/pdf");
+				response.addHeader("Content-disposition", "attachment");
+				OutputStream out = response.getOutputStream();
+				JasperExportManager.exportReportToPdfStream(jasperPrint, out);
+
+			} else {
+				JasperReport report = JasperCompileManager.compileReport(
+						request.getSession().getServletContext().getRealPath("/WEB-INF/views/reporte1.jrxml"));
+				JasperPrint jasperPrint = JasperFillManager.fillReport(report, null, new JREmptyDataSource());
+
+				// response.setContentType("application/x-download");
+				response.setContentType("application/pdf");
+				response.addHeader("Content-disposition", "attachment");
+				OutputStream out = response.getOutputStream();
+				JasperExportManager.exportReportToPdfStream(jasperPrint, out);
+			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
