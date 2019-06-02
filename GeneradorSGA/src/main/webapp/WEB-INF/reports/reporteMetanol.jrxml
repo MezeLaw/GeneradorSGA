@@ -8,7 +8,7 @@
 	<title>
 		<band height="51" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="561" height="51" uuid="aed1d9de-4633-4bf5-b86b-f7544c7332ae"/>
+				<reportElement x="-3" y="0" width="561" height="51" uuid="aed1d9de-4633-4bf5-b86b-f7544c7332ae"/>
 			</rectangle>
 			<staticText>
 				<reportElement x="143" y="5" width="265" height="40" uuid="b93d6550-0ff6-4db1-a2bc-4f28457ab58b"/>
@@ -22,7 +22,7 @@
 	<pageHeader>
 		<band height="137" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="561" height="91" uuid="611d0f19-b85c-464f-9f6b-16516a8b38ba"/>
+				<reportElement x="-3" y="0" width="561" height="101" uuid="611d0f19-b85c-464f-9f6b-16516a8b38ba"/>
 			</rectangle>
 			<image>
 				<reportElement x="355" y="15" width="65" height="70" uuid="227bd52c-151c-4a8d-86f6-1e98dd19bdf2"/>
@@ -37,46 +37,46 @@
 				<imageExpression><![CDATA["images/inflamable.jpg"]]></imageExpression>
 			</image>
 			<rectangle>
-				<reportElement x="0" y="91" width="561" height="30" uuid="eefdde17-0f7e-42d3-afd1-4cc09df1d1f7"/>
+				<reportElement x="-3" y="101" width="561" height="36" uuid="eefdde17-0f7e-42d3-afd1-4cc09df1d1f7"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="3" y="100" width="112" height="14" uuid="700ae86e-6103-4b50-aa11-60f29ed35733"/>
-				<textElement>
+				<reportElement x="0" y="108" width="117" height="23" uuid="700ae86e-6103-4b50-aa11-60f29ed35733"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Palabra de Advertencia:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="120" y="100" width="60" height="14" uuid="5022d296-6ee4-4e20-84d8-a1c94ee4ab20"/>
+				<reportElement x="117" y="112" width="60" height="14" uuid="5022d296-6ee4-4e20-84d8-a1c94ee4ab20"/>
 				<textElement textAlignment="Center"/>
 				<text><![CDATA[-]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="238" y="99" width="64" height="14" uuid="3b05ca91-1000-40d3-aba2-1b3ac3725c03"/>
+				<reportElement x="238" y="112" width="64" height="14" uuid="3b05ca91-1000-40d3-aba2-1b3ac3725c03"/>
 				<textElement textAlignment="Center"/>
 				<text><![CDATA[Peligro]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="360" y="100" width="60" height="14" uuid="703a2818-09f6-4a8b-92a4-39d905c62314"/>
+				<reportElement x="360" y="112" width="60" height="14" uuid="703a2818-09f6-4a8b-92a4-39d905c62314"/>
 				<textElement textAlignment="Center"/>
 				<text><![CDATA[-]]></text>
 			</staticText>
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="310" splitType="Stretch">
+		<band height="401" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="-16" width="561" height="106" uuid="aa81e5ec-b644-450a-ab42-f7d29488bf01"/>
+				<reportElement x="-3" y="0" width="561" height="106" uuid="aa81e5ec-b644-450a-ab42-f7d29488bf01"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="5" y="-10" width="534" height="20" uuid="aa715add-91ef-496f-9840-c5834ee79c3e"/>
+				<reportElement x="5" y="0" width="534" height="20" uuid="aa715add-91ef-496f-9840-c5834ee79c3e"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Indicación de Peligro:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="5" y="10" width="535" height="80" uuid="f05f8b6b-9d98-4b29-a809-65f005b1ba02"/>
+				<reportElement x="5" y="20" width="535" height="80" uuid="f05f8b6b-9d98-4b29-a809-65f005b1ba02"/>
 				<textElement>
 					<font size="11"/>
 				</textElement>
@@ -87,17 +87,17 @@ H331 Tóxico en caso de inhalación.
 H370 Provoca daños en los órganos. ]]></text>
 			</staticText>
 			<rectangle>
-				<reportElement x="0" y="90" width="561" height="120" uuid="017f63ac-8721-4698-b965-d2bd6e97216f"/>
+				<reportElement x="-3" y="100" width="561" height="130" uuid="017f63ac-8721-4698-b965-d2bd6e97216f"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="5" y="100" width="535" height="20" uuid="3c6900af-9c74-49d3-825e-57ba35e38688"/>
+				<reportElement x="5" y="100" width="534" height="20" uuid="3c6900af-9c74-49d3-825e-57ba35e38688"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Criterios de Clasificación:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="3" y="120" width="538" height="60" uuid="975c7832-aa9d-4621-8500-a13a0c373f93"/>
+				<reportElement x="5" y="120" width="539" height="60" uuid="975c7832-aa9d-4621-8500-a13a0c373f93"/>
 				<textElement>
 					<font size="11"/>
 				</textElement>
@@ -108,31 +108,31 @@ Toxicidad específica en determinados órganos - exposición única (Categoría 
 ]]></text>
 			</staticText>
 			<rectangle>
-				<reportElement x="0" y="200" width="561" height="110" uuid="659e1a23-996f-42a8-9131-e2a1d6a4566d"/>
+				<reportElement x="-3" y="230" width="561" height="120" uuid="659e1a23-996f-42a8-9131-e2a1d6a4566d"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="3" y="210" width="538" height="20" uuid="8cd5afaf-2969-4a1b-a56c-73ebe80b7589"/>
+				<reportElement x="1" y="240" width="538" height="20" uuid="8cd5afaf-2969-4a1b-a56c-73ebe80b7589"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[OTROS PELIGROS:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="3" y="230" width="538" height="70" uuid="f86a8712-9847-4cfb-8153-3bf3cf087bda"/>
+				<reportElement x="3" y="270" width="538" height="70" uuid="f86a8712-9847-4cfb-8153-3bf3cf087bda"/>
 				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Líquido fácilmente inflamable. Cuando se calienta, desprende humos tóxicos e irritantes. Los vapores forman mezclas explosivas con el aire. Los vapores pueden desplazarse hasta alcanzar fuentes de ignición e inflamarse.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="3" y="180" width="141" height="20" uuid="206ecc2b-0b53-4fe9-9b8f-8031b36a8f48"/>
-				<textElement>
+				<reportElement x="5" y="180" width="147" height="30" uuid="206ecc2b-0b53-4fe9-9b8f-8031b36a8f48"/>
+				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Otras regulaciones:                                      ]]></text>
+				<text><![CDATA[Otras regulaciones:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="150" y="180" width="387" height="20" uuid="4bb6f2e8-c31d-48a6-931f-5d2d6fa288e1"/>
+				<reportElement x="152" y="180" width="389" height="30" uuid="4bb6f2e8-c31d-48a6-931f-5d2d6fa288e1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<text><![CDATA[-]]></text>
 			</staticText>
