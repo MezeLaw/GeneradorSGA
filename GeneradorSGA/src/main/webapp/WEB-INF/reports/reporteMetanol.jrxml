@@ -125,14 +125,14 @@ Toxicidad específica en determinados órganos - exposición única (Categoría 
 				<text><![CDATA[Líquido fácilmente inflamable. Cuando se calienta, desprende humos tóxicos e irritantes. Los vapores forman mezclas explosivas con el aire. Los vapores pueden desplazarse hasta alcanzar fuentes de ignición e inflamarse.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="5" y="180" width="147" height="30" uuid="206ecc2b-0b53-4fe9-9b8f-8031b36a8f48"/>
+				<reportElement x="5" y="190" width="147" height="30" uuid="206ecc2b-0b53-4fe9-9b8f-8031b36a8f48"/>
 				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Otras regulaciones:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="152" y="180" width="389" height="30" uuid="4bb6f2e8-c31d-48a6-931f-5d2d6fa288e1"/>
+				<reportElement x="152" y="190" width="389" height="30" uuid="4bb6f2e8-c31d-48a6-931f-5d2d6fa288e1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<text><![CDATA[-]]></text>
 			</staticText>
