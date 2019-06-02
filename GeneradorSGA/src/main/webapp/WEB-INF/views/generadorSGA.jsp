@@ -7,7 +7,7 @@
 <title>Generador SGA</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="shortcut icon" type="image/jpg" href="img/flask50x50.jpg">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -46,13 +46,14 @@
 		<h1>Generar Rotulo</h1>
 		<hr>
 		<div class="row wrapper col-md-12">
-				<select id="elementos" class="row selectpicker wrapper col-sm-12"
-					data-live-search="true" data-width="100%" >
-					<option value="noOption"></option>
-					<c:forEach var="cod" items="${codigosElementos}">
-						<option value="${cod}">${cod}</option>
-					</c:forEach>
-				</select>
+			<select id="elementos" class="row selectpicker wrapper col-sm-12"
+				data-live-search="true" data-width="100%"
+				title="Ingrese su busqueda">
+				<option value="noOption"></option>
+				<c:forEach var="cod" items="${codigosElementos}">
+					<option value="${cod}">${cod}</option>
+				</c:forEach>
+			</select>
 		</div>
 
 		<div class="row wrapper col-md-8 " style="text-align: center">

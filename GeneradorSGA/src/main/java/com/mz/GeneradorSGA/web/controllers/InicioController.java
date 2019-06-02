@@ -15,7 +15,7 @@ public class InicioController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
-	@RequestMapping(value = "/inicio")
+	@RequestMapping(value = "/")
 	public ModelAndView handleRequest() {
 		String now = (new Date()).toString();
 		logger.info("Returning Inicio view with " + now);

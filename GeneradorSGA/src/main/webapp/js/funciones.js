@@ -1,6 +1,7 @@
 
 /* Inicio funciones */
 
+
 function generarPDF() {
 	
 	$.ajax({

@@ -12,12 +12,12 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand logo" href="${appCtx}/inicio"><img class="logo"
+			<a class="navbar-brand logo" href="${appCtx}/"><img class="logo"
 				src="img/flask50x50.jpg" alt="GeneradorSGA"></a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav pull-right">
-				<li><a href="${appCtx}/inicio">Inicio</a></li>
+				<li><a href="${appCtx}/">Inicio</a></li>
 				<li><a href="${appCtx}/noticias">Noticias</a></li>
 				<li><a href="${appCtx}/generarRotulo">Generador SGA</a></li>
 			</ul>
