@@ -8,8 +8,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/jpg" href="img/flask50x50.jpg">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	
+<link href="<c:url value="/css/bootstrap.min.css"/>" rel="stylesheet">	
+	
 
 <link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>"
 	rel="stylesheet">
@@ -21,8 +23,10 @@
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+
+<script type="text/javascript"
+	src="<c:url value="/js/bootstrap.min.js"/>"></script>
 
 <script type="text/javascript"
 	src="<c:url value="/js/bootstrap-select.js" />"></script>
@@ -31,6 +35,8 @@
 	src="<c:url value="/js/bootstrap-select.min.js" />"></script>
 
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
+
+
 
 </head>
 <body class="container">
@@ -56,6 +62,7 @@
 		<div class="row wrapper col-md-12">
 			<select id="elementos" class="row selectpicker wrapper col-sm-12"
 				data-live-search="true" data-width="100%"
+				data-none-Results-Text="No se hallaron resultados para su b&uacute;squeda"
 				title="Ingrese su b&uacute;squeda" onchange="verificarOpcion();">
 				<c:forEach var="cod" items="${codigosElementos}">
 					<option value="${cod}">${cod}</option>
@@ -70,6 +77,10 @@
 
 	</div>
 
+	<div class="container">
+		<div class="spinner-border spinner-border-sm"></div>
+		<div class="spinner-grow spinner-grow-sm"></div>
+	</div>
 
 	<!--  Fin inclusion de elementos del site -->
 

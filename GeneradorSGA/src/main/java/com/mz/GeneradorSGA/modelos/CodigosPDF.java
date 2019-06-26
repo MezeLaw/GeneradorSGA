@@ -1,0 +1,24 @@
+package com.mz.GeneradorSGA.modelos;
+
+public enum CodigosPDF {
+
+	Metanol("metanolYPF", "Metanol"),
+	Oxigeno("oxigenoPDF","Oxigeno"),
+	Nitrogeno("nitrogenoPDF", "nitro");
+
+	private final String nombrePDF;
+	private final String elemento;
+
+	CodigosPDF(String nombrePdf, String elemento) {
+		this.nombrePDF = nombrePdf;
+		this.elemento = elemento;
+	}
+
+	public String getNombrePdf() {
+		return this.nombrePDF;
+	}
+
+	public String getElemento() {
+		return this.elemento;
+	}
+}

@@ -9,18 +9,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/jpg" href="img/flask50x50.jpg">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	
+<link href="<c:url value="/css/bootstrap.min.css"/>" rel="stylesheet">	
 
 <link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>"
 	rel="stylesheet">
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<script type="text/javascript"
+	src="<c:url value="/js/bootstrap.min.js"/>"></script>	
+	
+<link href="<c:url value="/css/font-awesome.min.css"/>" rel="stylesheet">		
 
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
 
@@ -66,8 +68,18 @@
 		</div>
 
 		<div class="row wrapper col-md-4 " style="text-align: center">
+
 			<a href="https://www.srt.gob.ar/index.php/sga/"
 				class="fa fa-globe fa-2x" target="_blank" title="SRT"></a>
+			<hr>
+			<p>
+				<b>¿Qué es el SGA?</b>
+			</p>
+			<p>El Sistema Globalmente Armonizado de Clasificación y
+				Etiquetado de productos químicos (SGA o GHS por sus siglas en
+				inglés) establece criterios armonizados para clasificar sustancias y
+				mezclas con respecto a sus peligros físicos, para la salud y para el
+				medio ambiente.</p>
 		</div>
 
 
@@ -75,13 +87,27 @@
 		<div class="row wrapper col-md-4 " style="text-align: center">
 			<a
 				href="https://www.srt.gob.ar/wp-content/uploads/2018/06/01_SGA_Rev.5.pdf"
-				class="row  fa fa-flask fa-2x  " target="_blank" title="SGA"></a>
+				class="  fa fa-flask fa-2x  " target="_blank" title="SGA"></a>
+			<hr>
+			<p>
+				<b>Libro P&uacute;rpura</b>
+			</p>
+			<p>Los criterios establecidos en el SGA se basan en lo descrito
+				en un documento denominado Libro Púrpura.</p>
 		</div>
 
 		<div class="row wrapper col-md-4 " style="text-align: center">
 			<a
 				href="http://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=245850"
 				class="fa fa-book fa-2x" target="_blank" title="RES SRT 801/15"></a>
+			<hr>
+			<p>
+			<p>
+				<b>Resolución SRT N° 801/2015</b>
+			</p>
+			<p>Establece la implementación del SGA en el ámbito laboral de
+				nuestro país y es de cumplimiento obligatorio dentro del Sistema de
+				Riesgos del Trabajo</p>
 		</div>
 	</div>
 

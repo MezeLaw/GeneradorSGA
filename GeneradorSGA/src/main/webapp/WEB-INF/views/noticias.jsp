@@ -4,20 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- <title>Generador SGA - Noticias</title> -->
-<!-- <meta charset="utf-8"> -->
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<!-- <link rel="shortcut icon" type="image/jpg" href="img/flask50x50.jpg"> -->
-<!-- <link rel="stylesheet" -->
-<!-- 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
-<%-- <link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>" --%>
-<!-- 	rel="stylesheet"> -->
-<!-- <link rel="stylesheet" -->
-<!-- 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-<!-- <script -->
-<!-- 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-<!-- <script -->
-<!-- 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+
 
 
 
@@ -25,52 +12,55 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/jpg" href="img/flask50x50.jpg">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-<link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>"
-	rel="stylesheet">
+
+<link href="<c:url value="/css/bootstrap.min.css"/>" rel="stylesheet">
+
+<link rel="stylesheet"
+	href="<c:url value="/css/estilosEsqueletoGeneral.css"/>">
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"
+	src="<c:url value="/js/bootstrap.min.js"/>"></script>
 
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
 
 </head>
+
 <body class="container">
 
 	<!-- Inicio inclusion de navBar -->
 	<%@include file="navBarSitio.jsp"%>
 	<!--  Fin inclusion navBar -->
-	<hr>
-	<hr>
-
+	<br>
+	<br>
 	<!--  Inicio elementos de la pagina -->
 	<div class="heightAuto" style="margin-top: 50px">
 
-
 		<h1>Noticias</h1>
 		<hr>
-		<div class="row wrapper">
-			<div class="col-md-12">
-				<p>Al momento no tenemos noticias nuevas, regresa luego!</p>
 
-			</div>
+
+
+		<div class="row wrapper col-md-12">
+			<p class="col-md-12">Al momento no tenemos noticias, regresa
+				pronto!</p>
 		</div>
+
+
 
 	</div>
 
 
-
-	<!--  Fin inclusion de elementos del site -->
 
 	<!--  Inicio inclusion del footer -->
 
 	<%@include file="footerSitio.jsp"%>
 
 	<!--  Fin inclusion del footer -->
-
 </body>
+
+
 </html>
