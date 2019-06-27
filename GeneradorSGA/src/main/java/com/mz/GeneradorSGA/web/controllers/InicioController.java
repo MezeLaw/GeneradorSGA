@@ -10,6 +10,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.mz.GeneradorSGA.modelos.Elemento;
+
 @Controller
 public class InicioController {
 
@@ -33,12 +35,17 @@ public class InicioController {
 	public ModelAndView generarRotulo(Model model) {
 		String now = (new Date()).toString();
 		logger.info("Returning GenerarRotulo view with " + now);
-		ArrayList<String> lista = new ArrayList<String>();
-		lista.add("Monoxido de Carbono");
-		lista.add("Butano");
-		lista.add("Oxigeno");
-		lista.add("Carburo");
-		lista.add("Metanol");
+		ArrayList<Elemento> lista = new ArrayList<Elemento>();
+		
+		Elemento e1 = new Elemento("DiluyenteIsoprint","Diluyente Isoprint");
+		Elemento e2 = new Elemento("Metanol","Metanol");
+		Elemento e3 = new Elemento("Oxigeno","Oxigeno");
+		Elemento e4 = new Elemento("Nitrogeno","Nitrogeno");
+		
+		lista.add(e1);
+		lista.add(e2);
+		lista.add(e3);
+		lista.add(e4);
 		
 		model.addAttribute("codigosElementos", lista);
 		return new ModelAndView("generadorSGA", "now", now);

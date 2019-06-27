@@ -76,17 +76,12 @@ public class GenerarRotuloController {
 		try {
 			String pdfFileName = null;
 			CodigosPDF codigos = null;
-			
-			if("Metanol".equals(codigo)){
-			
-				pdfFileName = CodigosPDF.valueOf("Metanol").getNombrePdf();
-				System.out.print(pdfFileName);
-			} else{
-				pdfFileName = CodigosPDF.valueOf("Nitrogeno").getNombrePdf();
-				System.out.println(pdfFileName);
-			}
-			
-			String contextPath = request.getServletContext().getRealPath("/WEB-INF/reports/metanolYPF.pdf");
+
+			pdfFileName = CodigosPDF.valueOf(codigo).getNombrePdf();
+			System.out.print(pdfFileName);
+
+
+			String contextPath = request.getServletContext().getRealPath("/WEB-INF/reports/" + pdfFileName + ".pdf");
 			File pdfFile = new File(contextPath);
 
 			response.setContentType("application/pdf");
@@ -100,12 +95,10 @@ public class GenerarRotuloController {
 				responseOutputStream.write(bytes);
 			}
 			fileInputStream.close();
-			
-		 
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
-			
+
 		}
 	}
 }

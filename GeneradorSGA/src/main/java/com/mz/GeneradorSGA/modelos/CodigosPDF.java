@@ -3,8 +3,9 @@ package com.mz.GeneradorSGA.modelos;
 public enum CodigosPDF {
 
 	Metanol("metanolYPF", "Metanol"),
-	Oxigeno("oxigenoPDF","Oxigeno"),
-	Nitrogeno("nitrogenoPDF", "nitro");
+	Oxigeno("metanolYPF","Oxigeno"),
+	Nitrogeno("metanolYPF", "nitro"),
+	DiluyenteIsoprint("diluyenteIsoprint","diluIso");
 
 	private final String nombrePDF;
 	private final String elemento;

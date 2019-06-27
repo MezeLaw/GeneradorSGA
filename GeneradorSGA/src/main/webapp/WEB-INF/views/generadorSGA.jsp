@@ -65,7 +65,7 @@
 				data-none-Results-Text="No se hallaron resultados para su b&uacute;squeda"
 				title="Ingrese su b&uacute;squeda" onchange="verificarOpcion();">
 				<c:forEach var="cod" items="${codigosElementos}">
-					<option value="${cod}">${cod}</option>
+					<option value="${cod.codigo}">${cod.descripcion}</option>
 				</c:forEach>
 			</select>
 		</div>

@@ -69,7 +69,7 @@
 
 		<div class="row wrapper col-md-4 " style="text-align: center">
 
-			<a href="https://www.srt.gob.ar/index.php/sga/"
+			<a href="https://www.srt.gob.ar/index.php/sga-2/"
 				class="fa fa-globe fa-2x" target="_blank" title="SRT"></a>
 			<hr>
 			<p>
