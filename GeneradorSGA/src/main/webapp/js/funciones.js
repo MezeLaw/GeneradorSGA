@@ -10,7 +10,9 @@ $(document).ready(function() {
 
 function generarPDF() {
 	$("#generarPDF").attr("disabled", true);
-	
+
+	$.preloader.start({});
+
 	var codigo = $("#elementos").val();
 
 	$.ajax({
@@ -23,7 +25,9 @@ function generarPDF() {
 			"codigo" : codigo
 		},
 		success : function(data) {
-			
+
+			$.preloader.stop();
+
 			var a = document.createElement('a');
 			var url = window.URL.createObjectURL(data);
 			a.href = url;
@@ -33,6 +37,9 @@ function generarPDF() {
 			$("#generarPDF").attr("disabled", false);
 		},
 		error : function(data) {
+
+			$.preloader.stop();
+
 			// Saco el disabled al alert
 			$("#alertError").removeClass("hidden");
 			$("#generarPDF").attr("disabled", false);
@@ -41,40 +48,38 @@ function generarPDF() {
 
 }
 
-//function generarPDF() {
-//	$("#generarPDF").attr("disabled", true);
+// function generarPDF() {
+// $("#generarPDF").attr("disabled", true);
 //	
-//	var codigo = $("#elementos").val();
+// var codigo = $("#elementos").val();
 //
-//	$.ajax({
-//		url : 'Etiquetas/generarPDF',
-//		method : 'GET',
-//		xhrFields : {
-//			responseType : 'application/json'
-//		},
-//		data : {
-//			"codigo" : codigo
-//		},
-//		success : function(data) {
-//			debugger
-//			var a = document.createElement('a');
-//			var url = window.URL.createObjectURL(data);
-//			a.href = url;
-//			a.download = 'Rotulo-SGA.pdf';
-//			a.click();
-//			window.URL.revokeObjectURL(url);
-//			$("#generarPDF").attr("disabled", false);
-//		},
-//		error : function(data) {
-//			// Saco el disabled al alert
-//			$("#alertError").removeClass("hidden");
-//			$("#generarPDF").attr("disabled", false);
-//		}
-//	});
+// $.ajax({
+// url : 'Etiquetas/generarPDF',
+// method : 'GET',
+// xhrFields : {
+// responseType : 'application/json'
+// },
+// data : {
+// "codigo" : codigo
+// },
+// success : function(data) {
+// debugger
+// var a = document.createElement('a');
+// var url = window.URL.createObjectURL(data);
+// a.href = url;
+// a.download = 'Rotulo-SGA.pdf';
+// a.click();
+// window.URL.revokeObjectURL(url);
+// $("#generarPDF").attr("disabled", false);
+// },
+// error : function(data) {
+// // Saco el disabled al alert
+// $("#alertError").removeClass("hidden");
+// $("#generarPDF").attr("disabled", false);
+// }
+// });
 //
-//}
-
-
+// }
 
 function verificarOpcion() {
 	var opcion = $("#elementos").val();

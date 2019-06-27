@@ -75,7 +75,6 @@ public class GenerarRotuloController {
 		logger.info("Entraste a /Etiquetas/generarPDF");
 		try {
 			String pdfFileName = null;
-			CodigosPDF codigos = null;
 
 			pdfFileName = CodigosPDF.valueOf(codigo).getNombrePdf();
 			System.out.print(pdfFileName);
@@ -98,6 +97,7 @@ public class GenerarRotuloController {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			logger.error("Se rompio al querer generar el PDF ... ");
 
 		}
 	}

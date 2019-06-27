@@ -34,6 +34,8 @@
 <script type="text/javascript"
 	src="<c:url value="/js/bootstrap-select.min.js" />"></script>
 
+<script type="text/javascript" src="<c:url value="/js/jquery.preloaders.js"/>"></script>
+
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
 
 

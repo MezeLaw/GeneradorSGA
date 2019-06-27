@@ -2,10 +2,13 @@ package com.mz.GeneradorSGA.modelos;
 
 public enum CodigosPDF {
 
-	Metanol("metanolYPF", "Metanol"),
-	Oxigeno("metanolYPF","Oxigeno"),
-	Nitrogeno("metanolYPF", "nitro"),
-	DiluyenteIsoprint("diluyenteIsoprint","diluIso");
+
+	diluyenteIsoprint("diluyenteIsoprint","Diluyente Isoprint"),
+	cleanAlPlus("cleanAlPlus", "Clean Al Plus"),
+	gomaArabigaNatural("gomaArabigaNatural","Goma Arabiga Natural"),
+	limpiadorProfundoDeMantillasRevividor("limpiadorProfundoDeMantillasRevividor", "Limpiador Profundo de Mantillas - Revividor"),
+	limpiadorProfundoPlusDescristalizador("limpiadorProfundoPlusDescristalizador", "Limpiador Profundo Plus - Descristalizador"),
+	reveladorPositivo("reveladorPositivo", "Revelador Positivo");
 
 	private final String nombrePDF;
 	private final String elemento;
