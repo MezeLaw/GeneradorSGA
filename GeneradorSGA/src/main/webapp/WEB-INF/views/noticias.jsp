@@ -45,11 +45,26 @@
 
 
 		<div class="row wrapper col-md-12">
-			<p class="col-md-12">Al momento no tenemos noticias, regresa
-				pronto!</p>
+			<h4>
+				<b>Encuesta de alcance general</b></b>
+			</h4>
+			<p>Agregamos una encuesta de inter&eacute;s y alcance general,
+				para poder continuar con la investigaci&oacute;n y an&aacute;lisis
+				de esta problem&aacute;tica. Agradecemos profundamente si dispones
+				de un momento y nos ayudas complet&aacute;ndola.</p>
+			<br>
+			<p>¡Gracias!</p>
+
+
 		</div>
 
+		<div class="row wrapper col-md-12 " style="text-align: center">
+			<a
+				href="https://www.srt.gob.ar/wp-content/uploads/2018/06/01_SGA_Rev.5.pdf"
+				class="  fa fa-flask fa-2x  " target="_blank" title="SGA"></a>
+			<hr>
 
+		</div>
 
 	</div>
 

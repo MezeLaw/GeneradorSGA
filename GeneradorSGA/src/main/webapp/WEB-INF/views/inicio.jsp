@@ -10,19 +10,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/jpg" href="img/flask50x50.jpg">
 
-	
-<link href="<c:url value="/css/bootstrap.min.css"/>" rel="stylesheet">	
+
+<link href="<c:url value="/css/bootstrap.min.css"/>" rel="stylesheet">
 
 <link href="<c:url value="/css/estilosEsqueletoGeneral.css"/>"
 	rel="stylesheet">
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
+
 <script type="text/javascript"
-	src="<c:url value="/js/bootstrap.min.js"/>"></script>	
-	
-<link href="<c:url value="/css/font-awesome.min.css"/>" rel="stylesheet">		
+	src="<c:url value="/js/bootstrap.min.js"/>"></script>
+
+<link href="<c:url value="/css/font-awesome.min.css"/>" rel="stylesheet">
 
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
 
@@ -42,25 +42,23 @@
 		<hr>
 		<div class="row wrapper col-md-12">
 			<div class="col-md-12">
-				<p>Es un agrado poder darle la bienvenida al primer GeneradorSGA
-					online.</p>
-				<p>Nuestra aplicacion web es el resultado de una iniciativa que
-					aun hoy sigue vigente (intentando expandir y mejorar este
-					proyecto), que intenta ofrecer una herramienta mas a los tecnicos
-					de H&S asi como tambien a personal administrativo o quien se
-					encargue de rotular los materiales con los que se trabaja en el dia
-					a dia en distintas industrias y no sabe exactamente la forma
-					correcta de hacerlo.</p>
-				<p>Desde la pestaña "Generador de SGA", podra buscar por el
-					nombre del material en cuestion y con solo hacer click en "Generar"
-					se descargara una copia de un modelo de rotulado. Los estilos
-					pueden cambiarse a su gusto con software de terceros, nuestro
-					objetivo y desarrollo solo desea ser orientativo. Aun asi, tambien
-					puede ser utilizado sin modificaciones posteriores. Adicionalmente,
-					si usted desea obtener el rotulado de un material/compuesto que no
-					disponemos, podra escribirnos y enviarnos la mayor informacion que
-					posea y sera agregada a la inmediatez.</p>
 
+				<p>Es un agrado poder darle la bienvenida al primer GeneradorSGA
+					online. Nuestra aplicación web es el resultado de una iniciativa
+					que intenta ofrecer una herramienta más a los profesionales de
+					Higiene y Seguridad sobre el correcto etiquetado de los productos
+					químicos tal como lo establece el Sistema Globalmente Armonizado. A
+					su vez, también busca poder ayudar a las a las empresas que día a
+					día usan, en sus procesos productivos, químicos que deben estar
+					correctamente señalizados con el objetivo de poder crear una
+					cultura de prevención. Desde la pestaña "Generador de SGA", podrá
+					buscar por el nombre del producto químico en cuestión y con solo
+					hacer click en "Generar" se descargara una copia del etiquetado
+					correspondiente. Adicionalmente, si usted desea obtener el rotulado
+					de un producto que no disponemos, podrá escribirnos y enviarnos la
+					mayor información técnica que posea y será agregada con la mayor
+					celeridad posible.</p>
+				<br>
 				<p>Los saluda atentamente, el staff de GeneradorSGA.</p>
 				<br>
 
