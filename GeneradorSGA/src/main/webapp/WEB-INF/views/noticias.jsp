@@ -26,7 +26,7 @@
 	src="<c:url value="/js/bootstrap.min.js"/>"></script>
 
 <script type="text/javascript" src="<c:url value="/js/funciones.js"/>"></script>
-
+<link href="<c:url value="/css/font-awesome.min.css"/>" rel="stylesheet">
 </head>
 
 <body class="container">
@@ -45,25 +45,37 @@
 
 
 		<div class="row wrapper col-md-12">
-			<h4>
-				<b>Encuesta de alcance general</b></b>
-			</h4>
-			<p>Agregamos una encuesta de inter&eacute;s y alcance general,
-				para poder continuar con la investigaci&oacute;n y an&aacute;lisis
-				de esta problem&aacute;tica. Agradecemos profundamente si dispones
-				de un momento y nos ayudas complet&aacute;ndola.</p>
-			<br>
-			<p>¡Gracias!</p>
+			<div class="col-md-12">
+				<p>Agregamos una encuesta de inter&eacute;s y alcance general,
+					para poder continuar con la investigaci&oacute;n y an&aacute;lisis
+					de esta problemtica. Agradecemos profundamente si dispones de un
+					momento y nos ayudas complet&aacute;ndola.</p>
+				<br>
+				<p>&#161;Gracias!</p>
 
-
+			</div>
 		</div>
 
-		<div class="row wrapper col-md-12 " style="text-align: center">
-			<a
-				href="https://www.srt.gob.ar/wp-content/uploads/2018/06/01_SGA_Rev.5.pdf"
-				class="  fa fa-flask fa-2x  " target="_blank" title="SGA"></a>
-			<hr>
 
+		<!-- 			<iframe -->
+		<!-- 				src="https://docs.google.com/forms/d/e/1FAIpQLSetSZ4wAwEd72pCA8npT2kS0xewU0kUtZWNKMQAdF3-HO2YBg/viewform?embedded=true" -->
+		<!-- 				width="100%" height="2317px" frameborder="0" marginheight="0" -->
+		<!-- 				marginwidth="0" >Cargandoâ€¦</iframe> -->
+
+
+		<!-- 		<div class="row wrapper col-md-12 " style="text-align: center"> -->
+		<!-- 			<a href="https://forms.gle/oXjmomZk3z4jEveE9" -->
+		<!-- 				class="  fa fa-list-ul fa-2x  " target="_blank" title="Encuesta"></a> -->
+		<!-- 			<hr> -->
+
+		<!-- 		</div> -->
+
+		<div id="Iframe-Liason-Sheet"
+			class="row wrapper col-md-12 iframe-border center-block-horiz">
+			<div class="responsive-wrapper responsive-wrapper-wxh-760x1200">
+				<iframe
+					src="https://docs.google.com/forms/d/e/1FAIpQLSetSZ4wAwEd72pCA8npT2kS0xewU0kUtZWNKMQAdF3-HO2YBg/viewform?embedded=true">Cargando...</iframe>
+			</div>
 		</div>
 
 	</div>
