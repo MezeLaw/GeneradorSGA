@@ -51,12 +51,13 @@
 					su vez, también busca poder ayudar a las a las empresas que día a
 					día usan, en sus procesos productivos, químicos que deben estar
 					correctamente señalizados con el objetivo de poder crear una
-					cultura de prevención. Desde la pestaña "Generador de SGA", podrá
-					buscar por el nombre del producto químico en cuestión y con solo
-					hacer click en "Generar" se descargara una copia del etiquetado
-					correspondiente. Adicionalmente, si usted desea obtener el rotulado
-					de un producto que no disponemos, podrá escribirnos y enviarnos la
-					mayor información técnica que posea y será agregada con la mayor
+					cultura de prevención.</p>
+				<p>Desde la pestaña "Generador de SGA", podrá buscar por el
+					nombre del producto químico en cuestión y con solo hacer click en
+					"Generar" se descargara una copia del etiquetado correspondiente.
+					Adicionalmente, si usted desea obtener el rotulado de un producto
+					que no disponemos, podrá escribirnos y enviarnos la mayor
+					información técnica que posea y será agregada con la mayor
 					celeridad posible.</p>
 				<br>
 				<p>Los saluda atentamente, el staff de GeneradorSGA.</p>
