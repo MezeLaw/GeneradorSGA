@@ -68,7 +68,8 @@ public class GenerarRotuloController {
 	// }
 	// }
 
-	// Metodo que devuelve un pdf alocado en el workspace
+	/**Metodo que devuelve un pdf alocado en el workspace **/
+	
 	@ResponseBody
 	@RequestMapping(value = "/generarPDF", method = RequestMethod.GET)
 	public void generarPDF(HttpServletRequest request, HttpServletResponse response, @RequestParam String codigo) {

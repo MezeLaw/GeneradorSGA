@@ -8,7 +8,11 @@ public enum CodigosPDF {
 	gomaArabigaNatural("gomaArabigaNatural","Goma Arabiga Natural"),
 	limpiadorProfundoDeMantillasRevividor("limpiadorProfundoDeMantillasRevividor", "Limpiador Profundo de Mantillas - Revividor"),
 	limpiadorProfundoPlusDescristalizador("limpiadorProfundoPlusDescristalizador", "Limpiador Profundo Plus - Descristalizador"),
-	reveladorPositivo("reveladorPositivo", "Revelador Positivo");
+	reveladorPositivo("reveladorPositivo", "Revelador Positivo"),
+	fountGreenSF("fountGreenSF", "Fount Green SF"),
+	oSSoyPlus("oSSoyPlus", "Os Soy Plus"),
+	universalElectroestaticEtch("universalElectroestaticEtch", "Universal Electroestatic Etch");
+	
 
 	private final String nombrePDF;
 	private final String elemento;

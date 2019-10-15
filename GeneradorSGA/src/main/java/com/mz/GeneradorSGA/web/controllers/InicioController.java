@@ -40,7 +40,9 @@ public class InicioController {
 		logger.info("Returning GenerarRotulo view with " + now);
 		ArrayList<Elemento> lista = new ArrayList<Elemento>();
 
-		//A Futuro esto puede hacerse con un service
+		/***A Futuro esto puede hacerse con un service, por el momento no vale la pena ya que no estamos conectando
+		a ninguna db. **/
+		
 		
 		List<CodigosPDF> listaCodigos =
                 new ArrayList<CodigosPDF>(EnumSet.allOf(CodigosPDF.class));
