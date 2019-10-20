@@ -108,6 +108,11 @@
 				nuestro país y es de cumplimiento obligatorio dentro del Sistema de
 				Riesgos del Trabajo</p>
 		</div>
+
+		<div class="row wrapper col-md-12">
+			<br>
+		</div>
+
 	</div>
 
 
